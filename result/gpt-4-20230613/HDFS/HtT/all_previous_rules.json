@@ -1,0 +1,802 @@
+[
+    {
+        "Content": "If a log sequence contains E22 followed by E5, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block allocation and reception.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E4 without a preceding E2, then the system is [Abnormal].",
+        "Explanation": "An exception occurred while serving without a prior successful verification, indicating an anomaly.",
+        "Confidence": "0.85"
+    },
+    {
+        "Content": "If a log sequence contains E11 followed by E9 and then E26, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block termination, reception, and storage.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E23 followed by E21, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block deletion.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E4 followed by E3, then the system is [Abnormal].",
+        "Explanation": "An exception occurred while serving followed by a successful service attempt, indicating an anomaly.",
+        "Confidence": "0.85"
+    },
+    {
+        "Content": "If a log sequence contains E22 followed by E5, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block allocation and reception.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E11 followed by E9 and then E26, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block termination, reception, and storage.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E23 followed by E21, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block deletion.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E7, then the system is [Abnormal].",
+        "Explanation": "This event represents the removal of a block, which is not part of the normal lifecycle.",
+        "Confidence": "1.0"
+    },
+    {
+        "Content": "If a log sequence contains E22 followed by E5, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block allocation and reception.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E11 followed by E9 and then E26, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block termination, reception, and storage.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E23 followed by E21, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block deletion.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E4 followed by E3, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an exception occurred while serving, which is not part of the normal lifecycle.",
+        "Confidence": "0.85"
+    },
+    {
+        "Content": "If a log sequence contains E20, then the system is [Abnormal].",
+        "Explanation": "This event represents the checking of replication, which is not part of the normal lifecycle.",
+        "Confidence": "0.80"
+    },
+    {
+        "Content": "If a log sequence is shorter than 5 events, then the system is [Abnormal].",
+        "Explanation": "Short sequences may indicate incomplete operations, which are not part of the normal lifecycle.",
+        "Confidence": "0.75"
+    },
+    {
+        "Content": "If a log sequence contains E22 followed by E5, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block allocation and reception.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E11 followed by E9 and then E26, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block termination, reception, and storage.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E23 followed by E21, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block deletion.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E4 followed by E3, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an exception occurred while serving, which is not part of the normal lifecycle.",
+        "Confidence": "0.85"
+    },
+    {
+        "Content": "If a log sequence contains E28, then the system is [Abnormal].",
+        "Explanation": "This event represents a block that does not belong to any file, which is not part of the normal lifecycle.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E27, then the system is [Abnormal].",
+        "Explanation": "This event represents a request received for a block that is already stored, which is not part of the normal lifecycle.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E22 followed by E5, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block allocation and reception.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E11 followed by E9 and then E26, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block termination, reception, and storage.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E23 followed by E21, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block deletion.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E4 followed by E3, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an exception occurred while serving, which is not part of the normal lifecycle.",
+        "Confidence": "0.85"
+    },
+    {
+        "Content": "If a log sequence contains E28, then the system is [Abnormal].",
+        "Explanation": "This event represents a block that does not belong to any file, which is not part of the normal lifecycle.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E5 followed by E22, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an abnormal lifecycle where block reception precedes block allocation.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E4 followed by E2, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an exception occurred before verification, which is not part of the normal lifecycle.",
+        "Confidence": "0.85"
+    },
+    {
+        "Content": "If a log sequence contains E22 followed by E5, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block allocation and reception.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E11 followed by E9 and then E26, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block termination, reception, and storage.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E23 followed by E21, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block deletion.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E4 followed by E3, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an exception occurred while serving, which is not part of the normal lifecycle.",
+        "Confidence": "0.85"
+    },
+    {
+        "Content": "If a log sequence contains E28, then the system is [Abnormal].",
+        "Explanation": "This event represents a block that does not belong to any file, which is not part of the normal lifecycle.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E7, then the system is [Abnormal].",
+        "Explanation": "This event represents the removal of a block, which is not part of the normal lifecycle.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E4 followed by E2, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an exception occurred before verification, which is not part of the normal lifecycle.",
+        "Confidence": "0.85"
+    },
+    {
+        "Content": "If a log sequence contains E22 followed by E5, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block allocation and reception.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E11 followed by E9 and then E26, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block termination, reception, and storage.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E23 followed by E21, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block deletion.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E4 followed by E3, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an exception occurred while serving, which is not part of the normal lifecycle.",
+        "Confidence": "0.85"
+    },
+    {
+        "Content": "If a log sequence contains E28, then the system is [Abnormal].",
+        "Explanation": "This event represents a block that does not belong to any file, which is not part of the normal lifecycle.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E7, then the system is [Abnormal].",
+        "Explanation": "This event represents the removal of a block, which is not part of the normal lifecycle.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E4 followed by E2, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an exception occurred before verification, which is not part of the normal lifecycle.",
+        "Confidence": "0.85"
+    },
+    {
+        "Content": "If a log sequence contains E20, then the system is [Abnormal].",
+        "Explanation": "This event represents a check on replication, which is not part of the normal lifecycle.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E22 followed by E5, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block allocation and reception.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E11 followed by E9 and then E26, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block termination, reception, and storage.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E23 followed by E21, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block deletion.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E4 followed by E3, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an exception occurred while serving, which is not part of the normal lifecycle.",
+        "Confidence": "0.85"
+    },
+    {
+        "Content": "If a log sequence contains E28, then the system is [Abnormal].",
+        "Explanation": "This event represents a block that does not belong to any file, which is not part of the normal lifecycle.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E4 followed by E2, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an exception occurred before verification, which is not part of the normal lifecycle.",
+        "Confidence": "0.85"
+    },
+    {
+        "Content": "If a log sequence contains E20, then the system is [Abnormal].",
+        "Explanation": "This event represents a check on replication, which is not part of the normal lifecycle.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E4 multiple times consecutively, then the system is [Abnormal].",
+        "Explanation": "Multiple consecutive exceptions are not part of the normal lifecycle and indicate an anomaly.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E5 followed by E22, then the system is [Abnormal].",
+        "Explanation": "Receiving a block before its allocation is not part of the normal lifecycle and indicates an anomaly.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E22 followed by E5, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block allocation and reception.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E11 followed by E9 and then E26, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block termination, reception, and storage.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E23 followed by E21, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block deletion.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E4 followed by E3, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an exception occurred while serving, which is not part of the normal lifecycle.",
+        "Confidence": "0.85"
+    },
+    {
+        "Content": "If a log sequence contains E28, then the system is [Abnormal].",
+        "Explanation": "This event represents a block that does not belong to any file, which is not part of the normal lifecycle.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E4 followed by E2, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an exception occurred before verification, which is not part of the normal lifecycle.",
+        "Confidence": "0.85"
+    },
+    {
+        "Content": "If a log sequence contains E20, then the system is [Abnormal].",
+        "Explanation": "This event represents a check on replication, which is not part of the normal lifecycle.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E4 multiple times consecutively, then the system is [Abnormal].",
+        "Explanation": "Multiple consecutive exceptions are not part of the normal lifecycle and indicate an anomaly.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E5 followed by E22, then the system is [Abnormal].",
+        "Explanation": "Receiving a block before its allocation is not part of the normal lifecycle and indicates an anomaly.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E5 followed by E22 and then E7, then the system is [Abnormal].",
+        "Explanation": "Receiving a block before its allocation and then removing it is not part of the normal lifecycle and indicates an anomaly.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E22 followed by E5, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block allocation and reception.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E11 followed by E9 and then E26, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block termination, reception, and storage.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E23 followed by E21, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block deletion.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E4 followed by E3, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an exception occurred while serving, which is not part of the normal lifecycle.",
+        "Confidence": "0.85"
+    },
+    {
+        "Content": "If a log sequence contains E28, then the system is [Abnormal].",
+        "Explanation": "This event represents a block that does not belong to any file, which is not part of the normal lifecycle.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E4 followed by E2, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an exception occurred before verification, which is not part of the normal lifecycle.",
+        "Confidence": "0.85"
+    },
+    {
+        "Content": "If a log sequence contains E4 multiple times consecutively, then the system is [Abnormal].",
+        "Explanation": "Multiple consecutive exceptions are not part of the normal lifecycle and indicate an anomaly.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E5 followed by E22, then the system is [Abnormal].",
+        "Explanation": "Receiving a block before its allocation is not part of the normal lifecycle and indicates an anomaly.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E5 followed by E22 and then E7, then the system is [Abnormal].",
+        "Explanation": "Receiving a block before its allocation and then removing it is not part of the normal lifecycle and indicates an anomaly.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E20, then the system is [Abnormal].",
+        "Explanation": "This event represents a check on replication, which is not part of the normal lifecycle.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E22 followed by E5, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block allocation and reception.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E11 followed by E9 and then E26, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block termination, reception, and storage.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E23 followed by E21, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block deletion.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E4 followed by E3, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an exception occurred while serving, which is not part of the normal lifecycle.",
+        "Confidence": "0.85"
+    },
+    {
+        "Content": "If a log sequence contains E28, then the system is [Abnormal].",
+        "Explanation": "This event represents a block that does not belong to any file, which is not part of the normal lifecycle.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E4 followed by E2, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an exception occurred before verification, which is not part of the normal lifecycle.",
+        "Confidence": "0.85"
+    },
+    {
+        "Content": "If a log sequence contains E4 multiple times consecutively, then the system is [Abnormal].",
+        "Explanation": "Multiple consecutive exceptions are not part of the normal lifecycle and indicate an anomaly.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E5 followed by E22, then the system is [Abnormal].",
+        "Explanation": "Receiving a block before its allocation is not part of the normal lifecycle and indicates an anomaly.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E5 followed by E22 and then E7, then the system is [Abnormal].",
+        "Explanation": "Receiving a block before its allocation and then removing it is not part of the normal lifecycle and indicates an anomaly.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E20, then the system is [Abnormal].",
+        "Explanation": "This event represents a check on replication, which is not part of the normal lifecycle.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E27, then the system is [Abnormal].",
+        "Explanation": "This event represents a request received for a block that is not part of the normal lifecycle and indicates an anomaly.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E22 followed by E5, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block allocation and reception.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E11 followed by E9 and then E26, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block termination, reception, and storage.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E23 followed by E21, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block deletion.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E4 followed by E3, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an exception occurred while serving, which is not part of the normal lifecycle.",
+        "Confidence": "0.85"
+    },
+    {
+        "Content": "If a log sequence contains E28, then the system is [Abnormal].",
+        "Explanation": "This event represents a block that does not belong to any file, which is not part of the normal lifecycle.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E4 followed by E2, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an exception occurred before verification, which is not part of the normal lifecycle.",
+        "Confidence": "0.85"
+    },
+    {
+        "Content": "If a log sequence contains E4 multiple times consecutively, then the system is [Abnormal].",
+        "Explanation": "Multiple consecutive exceptions are not part of the normal lifecycle and indicate an anomaly.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E5 followed by E22, then the system is [Abnormal].",
+        "Explanation": "Receiving a block before its allocation is not part of the normal lifecycle and indicates an anomaly.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E5 followed by E22 and then E7, then the system is [Abnormal].",
+        "Explanation": "Receiving a block before its allocation and then removing it is not part of the normal lifecycle and indicates an anomaly.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E20, then the system is [Abnormal].",
+        "Explanation": "This event represents a check on replication, which is not part of the normal lifecycle.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E5 followed by E22 and then E7, then the system is [Abnormal].",
+        "Explanation": "Receiving a block before its allocation and then removing it is not part of the normal lifecycle and indicates an anomaly.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E5 followed by E22, then the system is [Abnormal].",
+        "Explanation": "Receiving a block before its allocation is not part of the normal lifecycle and indicates an anomaly.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E5 followed by E22 and then E7, then the system is [Abnormal].",
+        "Explanation": "Receiving a block before its allocation and then removing it is not part of the normal lifecycle and indicates an anomaly.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E22 followed by E5, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block allocation and reception.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E11 followed by E9 and then E26, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block termination, reception, and storage.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E23 followed by E21, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block deletion.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E4 followed by E3, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an exception occurred while serving, which is not part of the normal lifecycle.",
+        "Confidence": "0.85"
+    },
+    {
+        "Content": "If a log sequence contains E28, then the system is [Abnormal].",
+        "Explanation": "This event represents a block that does not belong to any file, which is not part of the normal lifecycle.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E4 followed by E2, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an exception occurred before verification, which is not part of the normal lifecycle.",
+        "Confidence": "0.85"
+    },
+    {
+        "Content": "If a log sequence contains E4 multiple times consecutively, then the system is [Abnormal].",
+        "Explanation": "Multiple consecutive exceptions are not part of the normal lifecycle and indicate an anomaly.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E5 followed by E22 and then E7, then the system is [Abnormal].",
+        "Explanation": "Receiving a block before its allocation and then removing it is not part of the normal lifecycle and indicates an anomaly.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E20, then the system is [Abnormal].",
+        "Explanation": "This event represents a check on replication, which is not part of the normal lifecycle.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E5 followed by E22 and then E7, then the system is [Abnormal].",
+        "Explanation": "Receiving a block before its allocation and then removing it is not part of the normal lifecycle and indicates an anomaly.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E5 followed by E22, then the system is [Abnormal].",
+        "Explanation": "Receiving a block before its allocation is not part of the normal lifecycle and indicates an anomaly.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E5 followed by E22 and then E7, then the system is [Abnormal].",
+        "Explanation": "Receiving a block before its allocation and then removing it is not part of the normal lifecycle and indicates an anomaly.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E22 followed by E5, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block allocation and reception.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E11 followed by E9 and then E26, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block termination, reception, and storage.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E23 followed by E21, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block deletion.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E4 followed by E3, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an exception occurred while serving, which is not part of the normal lifecycle.",
+        "Confidence": "0.85"
+    },
+    {
+        "Content": "If a log sequence contains E28, then the system is [Abnormal].",
+        "Explanation": "This event represents a block that does not belong to any file, which is not part of the normal lifecycle.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E4 followed by E2, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an exception occurred before verification, which is not part of the normal lifecycle.",
+        "Confidence": "0.85"
+    },
+    {
+        "Content": "If a log sequence contains E4 multiple times consecutively, then the system is [Abnormal].",
+        "Explanation": "Multiple consecutive exceptions are not part of the normal lifecycle and indicate an anomaly.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E5 followed by E22, then the system is [Abnormal].",
+        "Explanation": "Receiving a block before its allocation is not part of the normal lifecycle and indicates an anomaly.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E22 followed by E5, then the system is [Abnormal].",
+        "Explanation": "This sequence represents the normal lifecycle of block allocation and reception. However, in the given sequences, this pattern is associated with abnormal behavior.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E11 followed by E9 and then E26, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block termination, reception, and storage.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E23 followed by E21, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block deletion.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E4 followed by E3, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an exception occurred while serving, which is not part of the normal lifecycle.",
+        "Confidence": "0.85"
+    },
+    {
+        "Content": "If a log sequence contains E28, then the system is [Abnormal].",
+        "Explanation": "This event represents a block that does not belong to any file, which is not part of the normal lifecycle.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E4 followed by E2, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an exception occurred before verification, which is not part of the normal lifecycle.",
+        "Confidence": "0.85"
+    },
+    {
+        "Content": "If a log sequence contains E4 multiple times consecutively, then the system is [Abnormal].",
+        "Explanation": "Multiple consecutive exceptions are not part of the normal lifecycle and indicate an anomaly.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E5 followed by E22, then the system is [Abnormal].",
+        "Explanation": "Receiving a block before its allocation is not part of the normal lifecycle and indicates an anomaly.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E5 followed by E5, then the system is [Abnormal].",
+        "Explanation": "Receiving a block multiple times consecutively is not part of the normal lifecycle and indicates an anomaly.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E26 followed by E11 and then E9, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block storage, termination, and reception.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E22 followed by E5, then the system is [Abnormal].",
+        "Explanation": "This sequence represents the normal lifecycle of block allocation and reception. However, in the given sequences, this pattern is associated with abnormal behavior.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E11 followed by E9 and then E26, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block termination, reception, and storage.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E23 followed by E21, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block deletion.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E4 followed by E3, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an exception occurred while serving, which is not part of the normal lifecycle.",
+        "Confidence": "0.85"
+    },
+    {
+        "Content": "If a log sequence contains E28, then the system is [Abnormal].",
+        "Explanation": "This event represents a block that does not belong to any file, which is not part of the normal lifecycle.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E4 followed by E2, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an exception occurred before verification, which is not part of the normal lifecycle.",
+        "Confidence": "0.85"
+    },
+    {
+        "Content": "If a log sequence contains E4 multiple times consecutively, then the system is [Abnormal].",
+        "Explanation": "Multiple consecutive exceptions are not part of the normal lifecycle and indicate an anomaly.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E5 followed by E22, then the system is [Abnormal].",
+        "Explanation": "Receiving a block before its allocation is not part of the normal lifecycle and indicates an anomaly.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E5 followed by E5, then the system is [Abnormal].",
+        "Explanation": "Receiving a block multiple times consecutively is not part of the normal lifecycle and indicates an anomaly.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E26 followed by E11 and then E9, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block storage, termination, and reception.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E22 followed by E5 and then E7, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an abnormal lifecycle where a block is allocated, received, and then removed.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E22 followed by E5 and then E5, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an abnormal lifecycle where a block is allocated and then received multiple times consecutively.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E22 followed by E5, then the system is [Abnormal].",
+        "Explanation": "This sequence represents the normal lifecycle of block allocation and reception. However, in the given sequences, this pattern is associated with abnormal behavior.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E23 followed by E21, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block deletion.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E4 followed by E3, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an exception occurred while serving, which is not part of the normal lifecycle.",
+        "Confidence": "0.85"
+    },
+    {
+        "Content": "If a log sequence contains E28, then the system is [Abnormal].",
+        "Explanation": "This event represents a block that does not belong to any file, which is not part of the normal lifecycle.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E4 followed by E2, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an exception occurred before verification, which is not part of the normal lifecycle.",
+        "Confidence": "0.85"
+    },
+    {
+        "Content": "If a log sequence contains E4 multiple times consecutively, then the system is [Abnormal].",
+        "Explanation": "Multiple consecutive exceptions are not part of the normal lifecycle and indicate an anomaly.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E5 followed by E22, then the system is [Abnormal].",
+        "Explanation": "Receiving a block before its allocation is not part of the normal lifecycle and indicates an anomaly.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E5 followed by E5, then the system is [Abnormal].",
+        "Explanation": "Receiving a block multiple times consecutively is not part of the normal lifecycle and indicates an anomaly.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E26 followed by E11 and then E9, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block storage, termination, and reception.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E22 followed by E5 and then E5, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an abnormal lifecycle where a block is allocated and then received multiple times consecutively.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E11 followed by E9 and then E26, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block termination, reception, and storage.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E22 followed by E5, then the system is [Abnormal].",
+        "Explanation": "This sequence represents the normal lifecycle of block allocation and reception. However, in the given sequences, this pattern is associated with abnormal behavior.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E23 followed by E21, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block deletion.",
+        "Confidence": "0.95"
+    },
+    {
+        "Content": "If a log sequence contains E4 followed by E3, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an exception occurred while serving, which is not part of the normal lifecycle.",
+        "Confidence": "0.85"
+    },
+    {
+        "Content": "If a log sequence contains E28, then the system is [Abnormal].",
+        "Explanation": "This event represents a block that does not belong to any file, which is not part of the normal lifecycle.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E4 followed by E2, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an exception occurred before verification, which is not part of the normal lifecycle.",
+        "Confidence": "0.85"
+    },
+    {
+        "Content": "If a log sequence contains E4 multiple times consecutively, then the system is [Abnormal].",
+        "Explanation": "Multiple consecutive exceptions are not part of the normal lifecycle and indicate an anomaly.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E5 followed by E22, then the system is [Abnormal].",
+        "Explanation": "Receiving a block before its allocation is not part of the normal lifecycle and indicates an anomaly.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E5 followed by E5, then the system is [Abnormal].",
+        "Explanation": "Receiving a block multiple times consecutively is not part of the normal lifecycle and indicates an anomaly.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E26 followed by E11 and then E9, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block storage, termination, and reception.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E22 followed by E5 and then E5, then the system is [Abnormal].",
+        "Explanation": "This sequence represents an abnormal lifecycle where a block is allocated and then received multiple times consecutively.",
+        "Confidence": "0.90"
+    },
+    {
+        "Content": "If a log sequence contains E11 followed by E9 and then E26, then the system is [Normal].",
+        "Explanation": "This sequence represents the normal lifecycle of block termination, reception, and storage.",
+        "Confidence": "0.90"
+    }
+]
