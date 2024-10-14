@@ -1,0 +1,121 @@
+[
+    {
+        "global": {
+            "random_seed": 42,
+            "need_preprocess": false
+        },
+        "MCTS": {
+            "TOTAL_": 0,
+            "EPOCH": 50,
+            "Early_termination_reward": 0.9,
+            "reward_mode": "train",
+            "max_rule_len": 2
+        },
+        "dataset": {
+            "dataset_name": "HDFS",
+            "dir": "dataset",
+            "total_num": 20000,
+            "start_index": 0,
+            "train_ratio": 0.9,
+            "test_num": 2000,
+            "test_num_1": 25,
+            "test_num_0": 25
+        },
+        "LLM": {
+            "rule_base": "./rule_base/HDFS_rules_target_1_EarlyR_0.95_e_500_max_rule_len_5.json",
+            "name": "gpt-35-turbo-20230613",
+            "max_tokens": 1500,
+            "prompt_strategys": [
+                "HtT"
+            ],
+            "prompt_strategy": "CoT",
+            "temperature": 0,
+            "top_p": 1,
+            "frequency_penalty": 0,
+            "presence_penalty": 0,
+            "max_retries": 10
+        }
+    },
+    {},
+    {},
+    {},
+    {
+        "train_eval": {
+            "precision": 0.9553072625698324,
+            "recall": 0.0095,
+            "f1_score": 0.018812916001980307,
+            "true_positive": 23
+        },
+        "test_eval": {
+            "precision": 0.9583333333333334,
+            "recall": 0.0115,
+            "f1_score": 0.022727272727272728,
+            "true_positive": 23
+        },
+        "target": 1,
+        "conditions": [
+            "E11",
+            "E28"
+        ]
+    },
+    {
+        "train_eval": {
+            "precision": 0.9074074074074074,
+            "recall": 0.0027222222222222222,
+            "f1_score": 0.005428159964550793,
+            "true_positive": 10
+        },
+        "test_eval": {
+            "precision": 1.0,
+            "recall": 0.005,
+            "f1_score": 0.009950248756218907,
+            "true_positive": 10
+        },
+        "target": 1,
+        "conditions": [
+            "E11",
+            "E16"
+        ]
+    },
+    {
+        "train_eval": {
+            "precision": 0.9069767441860465,
+            "recall": 0.0021666666666666666,
+            "f1_score": 0.004323006151970293,
+            "true_positive": 5
+        },
+        "test_eval": {
+            "precision": 1.0,
+            "recall": 0.0025,
+            "f1_score": 0.004987531172069826,
+            "true_positive": 5
+        },
+        "target": 1,
+        "conditions": [
+            "E11",
+            "E25"
+        ]
+    },
+    {
+        "train_eval": {
+            "precision": 1.0,
+            "recall": 0.00011111111111111112,
+            "f1_score": 0.00022219753360737697,
+            "true_positive": 0
+        },
+        "test_eval": {
+            "precision": 0,
+            "recall": 0.0,
+            "f1_score": 0,
+            "true_positive": 0
+        },
+        "target": 1,
+        "conditions": [
+            "E11",
+            "E15"
+        ]
+    },
+    {},
+    {},
+    {}
+]
