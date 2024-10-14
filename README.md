@@ -1,6 +1,5 @@
-<<<<<<< HEAD
-# LLMGLog: Log-based Anomaly Detection with
-LLMs and Knowledge Refinement
+
+# LLMGLog: Log-based Anomaly Detection with LLMs and Knowledge Refinement
 # Abstract
 Log-based anomaly detection plays a critical role in ensuring the reliability and performance of software systems. Recently, large language models (LLMs) and Retrieval-Augmented Generations (RAGs) have demonstrated remarkable capabilities of intelligence in various domains. In this paper, we demonstrate four key concerns when leveraging LLMs and RAG to solve the log-based anomaly detection problem: accurate guidance, highdensity knowledge, explicit anomaly knowledge and guidance, and acceptable time and storage cost. We further propose a novel log-based anomaly detection approach based these concerns. The core idea is to refine and summarize knowledge from raw log data to create meaningful guidelines with high-density knowledge.
 Experiments on three public datasets show that our method achieves over 90% F1 score outperforming existing LLM-based and DL-based methods. Additionally, the experiments indicate it can significantly reduce storage costs and retrieval time.
